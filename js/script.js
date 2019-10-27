@@ -60,3 +60,5 @@ var submission = function() {
       output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
    }
    };
+
+
