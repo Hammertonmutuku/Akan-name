@@ -25,5 +25,15 @@ form {
 
 }
 .container {
-    margin-top:50px;
+    margin-top:50px;s
+}
+span {
+    color: white;
+    font-size:30px;
+    padding:10px;
+    border:2px solid #38738B;
+    border-radius: 40px;
+    }
+span a:hover {
+    background-color: blue;
 }
