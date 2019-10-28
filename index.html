@@ -16,47 +16,35 @@
     <p><strong>Akan names</strong> are derived from Ghanian culture.Children are given names specifically the first name which corresponds to the day in the week they were born.Akan names vary in gender<br>
     By keying in the date of birth and gender this website will enable you get your akan name.<br>
     </p>
-    <form class="form-horizontal" action="/action_page.php">
+    <form >
+      
         <div class="form-group">
           <label class="control-label col-sm-3" for="year">Year:</label>
           <div class="col-sm-10">
-            <input type="year" class="form-control" id="date of birth" placeholder="year">
+            <input type="number" class="form-control" id = "year" placeholder="year">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="month">Month:</label>
           <div class="col-sm-10"> 
-            <input type="number" class="form-control" id="month" placeholder="Enter month">
+            <input type="number" class="form-control" id = "month" placeholder="Enter month">
           </div>
         </div>
         <div class="form-group">
                 <label class="control-label col-sm-3" for="">Date of birth:</label>
                 <div class="col-sm-10"> 
-                  <input type="date of birth" class="form-control" id="date of birth" placeholder="Enter date of birth">
+                  <input type="number" class="form-control" id = "day" placeholder="Enter date of birth">
                 </div>
               </div>
-        <div class="form-group"> 
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label><input type="checkbox"> male</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group"> 
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label><input type="checkbox"> female</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group"> 
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default"><span>Submit</span></button>
-          </div>
-        </div>
-        </div>
+              <input type="radio" name="gender" value="male" id = "male"> Male<br>
+              <input type="radio" name="gender" value="female" id = "female"> Female<br>
+            <a onclick="submit()" class="btn btn-outline-primary btn-lg">Submit</a>
+          
+
+        
       </form>
-      <  <script src="js/script.js"></script>
-    
+      <p id = "paragraph"></p>
+      <script src="js/script.js"></script>
+    </div>
 </body>
 </html>

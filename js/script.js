@@ -1,4 +1,4 @@
-var submission = function() {
+var submit= function() {
     var daysOfTheWeek = [
       "Sunday",
       "Monday",
@@ -26,39 +26,33 @@ var submission = function() {
       "Afua",
       "Ama"
     ];
-    var month = parseInt(document.getElementById("month").value);
+
     var year = parseInt(document.getElementById("year").value);
-    var day = parseInt(document.getElementById("day").value);
-    var name =(document.getElementById("name").value);
-    var date0fbirth = new Date(year + "/" + month + "/" + day);
-    var results = date0fbirth.getDay();
-    var output = document.getElementById("output");
+    var month = parseInt(document.getElementById("month").value);
+    var day = parseInt(document.getElementById("day").value)
     var male = document.getElementById("male")
     var female = document.getElementById("female")
-   if (year < 1900) {
-      output.style.background ="red"
-      output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid year! "
+    var paragraph=document.getElementById("paragraph")
+    var date = new Date(year + "/" + month + "/" + day);
+    var results = date.getDay();
+   if (year < 1950) {
+      paragraph.innerHTML = " please enter a valid year! "
    }
-   else if ((month < 1) || (month > 31)) {
-      output.style.background ="red"
-      output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid month! "
+   else if (month < 1 || month > 12) {
+      paragraph.innerHTML = " please enter a valid month! "
    }
    else if (day < 0 || day > 31) {
-      output.style.background ="lime"
-      output.style.color= "white"
-      output.innerHTML = "Hey! " + name + " please enter a valid day! "
+     
+      paragraph.innerHTML = " please enter a valid day! "
    }
     else if(male.checked) {
-      output.style.background ="lime"
-        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+      
+        paragraph.innerHTML =  " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
     }
-     else {
-      output.style.background ="lime"
-      output.style.background ="red"
-      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+     else if (female.checked) {
+      
+      paragraph.innerHTML =" you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
    }
-   };
+};
 
 
