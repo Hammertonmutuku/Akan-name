@@ -40,9 +40,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @Hammertonmutuku
 
 ## Contacts
-- Incase of any feedback you can reach me through my personal contacts:
- - Hammertonmutuku
- - lthamma3@gmail.com
- 
+ Incase of any feedback you can reach me through my personal contacts:
+ Hammertonmutuku
+ lthamma3@gmail.com
+
 ## Author
 **Hammertonmutuku**
